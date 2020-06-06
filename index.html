@@ -8,20 +8,20 @@
     <title>LOCO</title>
   </head>
   <body>
-    <header class="header">
-      <h2 class="header__logo">LOCO</h2>
-      <div class="header__ru">
-        <div class="header__lang">RU</div>
-        <div>
-          <img  class="header__vector" src="" alt="Vector1">
-        </div>
-      </div>
-      <div class="header__menu">
-        <button class="header__line"></button>
-        <button class="header__line"></button>
-      </div>
-    </header>
     <main class="main">
+      <header class="header">
+        <h2 class="header__logo">LOCO</h2>
+        <div class="header__ru">
+          <div class="header__lang">RU</div>
+          <div>
+            <img  class="header__vector" src="" alt="Vector1">
+          </div>
+        </div>
+        <div class="header__menu">
+          <button class="header__line"></button>
+          <button class="header__line"></button>
+        </div>
+      </header>
       <section class="up-section">
         <div class="up-section__collection">
           <div>
@@ -88,26 +88,26 @@
             <button class="middle-section__btn middle-section__btn_busket">
               добавить в корзину
             </button>
-            <button class="middle-section__btn middle-section__btn_other">
-              другие товары на loco.com
-            </button>
+            <div class="middle-section__options">
+              <ul class="middle-section__color">
+              <li class="middle-section__elipse middle-section__elipse_grey"></li>
+              <li class="middle-section__elipse middle-section__elipse_pink"></li>
+              <li class="middle-section__elipse middle-section__elipse_blue"></li>
+              <li class="middle-section__elipse middle-section__elipse_green"></li>
+            </ul>
+            <div class="middle-section__order">
+              <span class="middle-section__minus">-</span>
+              <input class="middle-section__input" type="text" value="1">
+              <span class="middle-section__plus">+</span>
+            </div>
           </div>
         </div>
+        </div>
+        <button class="middle-section__btn_other">
+          другие товары на loco.com
+        </button>
         <div>
           <img class="middle-section__vector" src="" alt="Vector21">
-        </div>
-        <div class="middle-section__options">
-          <ul class="middle-section__color">
-            <li class="middle-section__elipse middle-section__elipse_grey"></li>
-            <li class="middle-section__elipse middle-section__elipse_pink"></li>
-            <li class="middle-section__elipse middle-section__elipse_blue"></li>
-            <li class="middle-section__elipse middle-section__elipse_green"></li>
-          </ul>
-          <div class="middle-section__order">
-            <span class="middle-section__minus">-</span>
-            <input class="middle-section__input" type="text" value="1">
-            <span class="middle-section__plus">+</span>
-          </div>
         </div>
       </section>
       <section class="bottom-section">
@@ -116,38 +116,40 @@
           <div>
             <img class="bottom-section__image" src="" alt="autumn collection">
           </div>
-          <h1 class="bottom-section__title">
-            Serene Total Look
-          </h1>
-          <h2 class="bottom-section__subtitle">
-            Осенняя коллекция
-          </h2>
-          <p class="bottom-section__description">
-            Джинсы, свитер, обувь. В комплект также входит пакет ароматного чая и кружка.
-          </p>
-          <div class="bottom-section__order">
-            <span class="bottom-section__minus">-</span>
-            <input class="bottom-section__input" type="text" value="1">
-            <span class="bottom-section__plus">+</span>
-          </div>     
-          <div class="bottom-section__btn">
-            <button class="bottom-section__btn bottom-section__btn_basket">
-              добавить в корзину
-            </button>
-            <button class="bottom-section__btn_other">
-              другие товары на loco.com
-            </button>
+          <div class="bottom-section__block">
+            <h1 class="bottom-section__title">
+              Serene Total Look
+            </h1>
+            <h2 class="bottom-section__subtitle">
+              Осенняя коллекция
+            </h2>
+            <p class="bottom-section__description">
+              Джинсы, свитер, обувь. В комплект также входит пакет ароматного чая и кружка.
+            </p>
+            <div class="bottom-section__order">
+              <span class="bottom-section__minus">-</span>
+              <input class="bottom-section__input" type="text" value="1">
+              <span class="bottom-section__plus">+</span>
+            </div>     
+            <div class="bottom-section__btn">
+              <button class="bottom-section__btn bottom-section__btn_basket">
+                добавить в корзину
+              </button>
+              <button class="bottom-section__btn_other">
+                другие товары на loco.com
+              </button>
+            </div>
           </div>
+          <footer class="footer">
+            <h2 class="footer__subtitle">
+              Разработано в
+            </h2>
+            <a class="footer__link" href="#">
+              <img src="" alt="WHS">
+            </a>
+          </footer>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <h2 class="footer__subtitle">
-        Разработано в
-      </h2>
-      <a class="footer__link" href="#">
-        <img src="" alt="WHS">
-      </a>
-    </footer>
   </body>
 </html>
