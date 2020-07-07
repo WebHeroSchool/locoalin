@@ -36,7 +36,7 @@ body {
   font-size: 30px;
   line-height: 37px;
   text-align: center;
-  letter-spacing: 0.07em;
+  letter-spacing: .07em;
   color: #fff;
 }
 
@@ -87,7 +87,6 @@ body {
   text-align: center;
   justify-content: center;
 }
-
 
 .up-section__btn_else:hover {
   background-color: #eeddd0;
@@ -231,13 +230,13 @@ body {
     background-color: #eeddd0;
   }
 
-  .header__burger-line:first-of-type {
-    margin-bottom: 5px;
-  }
-
   .header__burger-line {
     width: 35px;
     height: 4px;
+  }
+
+  .header__burger-line:first-of-type {
+    margin-bottom: 5px;
   }
 
   .up-section__desription {
@@ -246,7 +245,7 @@ body {
     font-weight: normal;
   }
 
-  .up-section__collection-description{
+  .up-section__collection-description {
     width: 475px;
     margin-left: 45px;
   }
@@ -260,7 +259,7 @@ body {
     font-weight: bold;
     line-height: 82px;
     font-size: 80px;
-    }
+  }
 
   .up-section {
     background: -webkit-linear-gradient(left, #000 461px, #fff 460px);
@@ -292,22 +291,6 @@ body {
     height: 562px;
     -o-object-position: 50% 50%;
     object-position: 50% 50%;
-  }
-
-  .up-section__collection-description {
-    width: 475px;
-    margin-left: 45px;
-  }
-
-  .up-section__title {
-    padding-left: 10px;
-    margin-top: 108px;
-    margin-bottom: 2px;
-    width: 475px;
-    height: 164px;
-    font-weight: bold;
-    line-height: 82px;
-    font-size: 80px;
   }
 
   .up-section__description,
@@ -408,11 +391,17 @@ body {
 
   .up-section__title {
     text-align: center;
+    margin-bottom: 46px;
+  }
+
+  .up-section__scrooll {
+    bottom: -60px;
+    width: 27px;
+    height: 46px;
   }
 
   .header__lang,
-  .up-section__btn,
-  .up-section__btn {
+  .up-section__btn, {
     display: none;
   }
 }
@@ -443,6 +432,7 @@ body {
 
   .up-section__title {
     text-align: auto;
+    bottom: 66px;
   }
 
   .up-section__title::after {
