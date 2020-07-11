@@ -369,7 +369,7 @@ button {
   font-weight: normal;
   font-size: 9px;
   line-height: 13px;
-  color: #000000;
+  color: #000;
   opacity: .5;
 }
 
@@ -1076,7 +1076,7 @@ button {
     margin-right: 15px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1.5px solid #000000;
+    border: 1.5px solid #000;
   }
 
   .middle-section__minus,
@@ -1160,7 +1160,7 @@ button {
   }
 
   .middle-section__desription {
-    opacity: 0.5;
+    opacity: .5;
   }
 
   .middle-section__btn_other:hover {
