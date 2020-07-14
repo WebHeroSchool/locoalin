@@ -154,22 +154,6 @@ body {
   background: #fae8e4;
 }
 
-.middle-section__image {
-  height: 264px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
-  margin-top: 62px;
-  padding: 0;
-}
-
 .middle-section__img {
   margin-top: 14px;
 }
@@ -201,21 +185,21 @@ body {
   opacity: .5;
 }
 
-.middle-section__btn_busket {
+.middle-section__btn {
   width: 203px;
   height: 30px;
-  padding-top: 14px;
+  display: flex;
   border: 1.5px solid #000;
   text-align: center;
+  justify-content: center;
 }
 
-.middle-section__btn_busket:hover {
+.middle-section__btn:hover {
   cursor: pointer;
   background-color: #fae8e4;
 }
 
-.quantity,
-.middle-section__btn_other {
+.quantity {
   display: none;
 }
 
@@ -349,11 +333,12 @@ button {
 }
 
 .middle-section__btn,
-.middle-section__btn_other {
+.middle-section__link {
   text-transform: uppercase;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
+  line-height: 16px;
 }
 
 .middle-section__title {
@@ -426,7 +411,7 @@ button {
   opacity: .5;
 }
 
-.bottom-section__btn_other {
+.bottom-section__link {
   position: relative;
   width: 138px;
   padding-bottom: 30px;
@@ -476,14 +461,14 @@ button {
   transform: rotate(-45deg);
 }
 
-.bottom-section__btn_basket {
+.bottom-section__btn {
   height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   border: 1.5px solid #000;
-  text-align: center;
   width: 256px;
-  padding-top: 9px;
-  padding-bottom: 26px;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -497,10 +482,11 @@ button {
 }
 
 @media (min-width: 1400px) {
-  .middle-section__btn_other {
+  .middle-section__link {
     right: 78px;
     bottom: 121px;
     text-decoration: none;
+    color: #000;
   }
 
   .bottom-section__image {
@@ -535,7 +521,7 @@ button {
     margin-right: 10px;
   }
 
-  .bottom-section__btn_other {
+  .bottom-section__link {
     right: 10%;
     bottom: 27%;
   }
@@ -554,7 +540,7 @@ button {
     margin-left: 100px;
   }
 
-  .middle-section__btn_other {
+  .middle-section__link {
     right: 6%;
     text-decoration: none;
   }
@@ -816,6 +802,69 @@ button {
   .social__item:hover {
     transform: scale(1.05);
   }
+
+  .middle-section__link {
+    position: relative;
+    left: 500px;
+    top: 90%;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    color: #000;
+  }
+
+  .middle-section__arrow {
+    cursor: pointer;
+    position: relative;
+  }
+
+  .middle-section__arrow div {
+    position: relative;
+    width: 108px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+  }
+
+  .middle-section__arrow div::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 1px;
+    top: -3px;
+    right: 0;
+    background-color: #000;
+    transform: rotate(45deg);
+  }
+
+  .middle-section__arrow div::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 1px;
+    top: 4px;
+    right: 0;
+    background-color: #000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+  }
+
+  .middle-section__link:hover {
+    transform: scale(1.05);
+  }
+
+  .bottom-section__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom-section__plus,
+  .bottom-section__value,
+  .bottom-section__minus {
+    border: none;
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 992px) {
@@ -881,8 +930,35 @@ button {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: 0 -30px;
-    object-position: 0 -30px;
+    -o-object-position: 0 0px;
+    object-position: 0 0px;
+  }
+
+  .middle-section__image {
+    height: 264px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .middle-section__link {
+    position: relative;
+    left: 500px;
+    top: 90%;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    color: #000;
   }
 }
 
@@ -936,8 +1012,24 @@ button {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: 0 -10px;
-    object-position: 0 -10px;
+    -o-object-position: 0 0px;
+    object-position: 0 0px;
+  }
+
+  .middle-section__image {
+    height: 264px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 0;
+    padding: 0;
   }
 }
 
@@ -979,24 +1071,26 @@ button {
     font-weight: normal;
   }
 
-  .middle-section__btn_other {
+  .middle-section__link {
     position: absolute;
-    right: 50px;
-    top: 95%;
-    width: 478px;
+    left: 62%;
+    top: 90%;
     cursor: pointer;
     text-decoration: none;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
+    color: #000;
   }
 
-  .middle-section__btn_busket {
+  .middle-section__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 253px;
     height: 44px;
     padding-right: 10px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 14px;
   }
 
   .middle-section__colors-and-price {
@@ -1027,7 +1121,8 @@ button {
   .middle-section__arrow {
     cursor: pointer;
     position: relative;
-    left: 240px;
+    width: 240px;
+    right: -240px;
     bottom: 25px;
   }
 
@@ -1063,8 +1158,7 @@ button {
     transform: rotate(-45deg);
   }
 
-  .quantity,
-  .middle-section__btn_other {
+  .quantity {
     display: block;
     color: #000;
   }
@@ -1162,16 +1256,6 @@ button {
   .middle-section__desription {
     opacity: .5;
   }
-
-  .middle-section__btn_other:hover {
-    transform: scale(1.05);
-  }
-}
-
-@media (min-width: 503px) {
-  .middle-section__image {
-    margin-top: 114px;
-  }
 }
 
 @media (min-width: 992px) {
@@ -1188,7 +1272,7 @@ button {
     margin-left: -10px;
   }
 
-  .bottom-section__btn_basket:hover {
+  .bottom-section__btn:hover {
     background-color: #fff;
   }
 
@@ -1208,7 +1292,7 @@ button {
     cursor: pointer;
   }
 
-  .bottom-section__btn_other:hover {
+  .bottom-section__link:hover {
     transform: scale(1.05);
   }
 
@@ -1295,19 +1379,6 @@ button {
   }
 }
 
-@media (min-width: 380px) {
-  .bottom-section__btn_other {
-    right: -57%;
-  }
-}
-
-@media (min-width: 620px) {
-  .bottom-section__btn_other {
-    right: -52%;
-    width: 254px;
-  }
-}
-
 @media (min-width: 992px) {
   .bottom-section__title,
   .bottom-section__subtitle,
@@ -1315,7 +1386,7 @@ button {
     margin-left: -80px;
   }
 
-  .bottom-section__btn_other {
+  .bottom-section__link {
     position: absolute;
     right: 8%;
     bottom: 11%;
@@ -1327,11 +1398,13 @@ button {
     line-height: normal;
   }
 
-  .bottom-section__btn_basket {
+  .bottom-section__btn {
+    display: flex;
     margin-top: -12.5%;
     margin-left: 30%;
     height: 43px;
     text-align: center;
+    justify-content: center;
   }
 
   .bottom-section__arrow div {
@@ -1341,12 +1414,12 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .bottom-section__btn_other {
+  .bottom-section__link {
     right: 10%;
     bottom: 21%;
   }
 
-  .bottom-section__btn_basket {
+  .bottom-section__btn {
     margin-top: -12.5%;
     margin-left: 30%;
   }
@@ -1358,17 +1431,23 @@ button {
 }
 
 @media (max-width: 768px) {
-  .bottom-section__btn_basket {
+  .middle-section__btn {
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  .bottom-section__btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 
   .bottom-section__arrow div {
     top: 15px;
   }
 
-  .bottom-section__btn_other {
-    right: -50%;
+  .bottom-section__link {
+    display: none;
   }
 }
 
