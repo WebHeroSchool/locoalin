@@ -194,11 +194,6 @@ body {
   justify-content: center;
 }
 
-.middle-section__btn:hover {
-  cursor: pointer;
-  background-color: #fae8e4;
-}
-
 .quantity {
   display: none;
 }
@@ -339,6 +334,11 @@ button {
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
+}
+
+.middle-section__btn:hover {
+  cursor: pointer;
+  background-color: #fae8e4;
 }
 
 .middle-section__title {
@@ -930,8 +930,8 @@ button {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: 0 0px;
-    object-position: 0 0px;
+    -o-object-position: 0 0;
+    object-position: 0 0;
   }
 
   .middle-section__image {
@@ -1161,9 +1161,6 @@ button {
   .quantity {
     display: block;
     color: #000;
-  }
-
-  .quantity {
     width: 100px;
     height: 44px;
     padding-top: 12px;
@@ -1436,6 +1433,7 @@ button {
     justify-content: center;
     align-items: center;
   }
+  
   .bottom-section__btn {
     display: flex;
     justify-content: center;
