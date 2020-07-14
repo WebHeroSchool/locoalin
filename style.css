@@ -1012,8 +1012,8 @@ button {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: 0 0px;
-    object-position: 0 0px;
+    -o-object-position: 0 0;
+    object-position: 0 0;
   }
 
   .middle-section__image {
@@ -1433,7 +1433,7 @@ button {
     justify-content: center;
     align-items: center;
   }
-  
+
   .bottom-section__btn {
     display: flex;
     justify-content: center;
