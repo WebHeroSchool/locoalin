@@ -1549,7 +1549,7 @@ button {
   }
 
   .bottom-section__description {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
@@ -1587,8 +1587,8 @@ button {
 
   .bottom-section__arrow {
     display: block;
-    margin-top: 20px; 
-    margin-left: 0px;
+    margin-top: 20px; /* end-of-line comment */
+    margin-left: 0;
   }
 }
 
