@@ -724,8 +724,8 @@ button {
   }
 
   .up-section__btn .up-section__btn_offer {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
     position: relative;
     width: 232px;
     padding-top: 14px;
@@ -1547,15 +1547,13 @@ button {
   }
 }
 
-
-
 @media (min-width: 768px) and (max-width: 900px) {
   .bottom-section__link {
     display: inline-block;
     left: 500px;
   }
 
-  .bottom-section__arrow div{
+  .bottom-section__arrow div {
     display: block;
     margin-top: 20px;
     margin-left: 0;
