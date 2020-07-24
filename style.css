@@ -717,14 +717,15 @@ button {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 490px;
-    padding-left: 5px;
+    width: 470px;
     margin-top: 23px;
     text-decoration: none;
     color: #000;
   }
 
   .up-section__btn .up-section__btn_offer {
+    margin-left: 0px;
+    margin-right: 0px;
     position: relative;
     width: 232px;
     padding-top: 14px;
@@ -860,8 +861,8 @@ button {
   .up-section__arrow {
     cursor: pointer;
     position: relative;
-    bottom: 15px;
-    margin-right: 430px;
+    top: 10px;
+    right: 175px;
   }
 
   .up-section__arrow div {
@@ -898,6 +899,47 @@ button {
 }
 
 @media (max-width: 900px) and (min-width: 769px) {
+  .up-section__arrow {
+    cursor: pointer;
+    position: relative;
+    bottom: 15px;
+  }
+
+  .up-section__arrow div {
+    position: relative;
+    top: 20px;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin: 0;
+  }
+
+  .up-section__arrow div::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 1px;
+    top: -33px;
+    right: 0;
+    background-color: #000;
+    transform: rotate(45deg);
+    margin: 0;
+  }
+
+  .up-section__arrow div::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 1px;
+    top: 4px;
+    right: 0;
+    background-color: #000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+    margin: 0;
+  }
+
   .middle-section__btn {
     display: flex;
     align-items: center;
@@ -1388,8 +1430,8 @@ button {
 
 @media (min-width: 520px) {
   .bottom-section__text-block {
-    margin-left: 20%;
-    margin-right: 10%;
+    margin-left: 25%;
+    margin-right: 20%;
   }
 
   .bottom-section__image {
@@ -1475,8 +1517,8 @@ button {
   }
 
   .bottom-section__arrow div {
-    bottom: 7px;
-    left: 240px;
+    top: -5px;
+    left: 0;
   }
 }
 
@@ -1498,68 +1540,22 @@ button {
 }
 
 @media (min-width: 770px) and (max-width: 992px) {
-  .bottom-section__title {
-    margin-left: -65px;
-  }
-
-  .bottom-section__subtitle {
-    margin-left: -40px;
-  }
-
-  .bottom-section__btn {
-    margin-left: 75px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 770px) {
-  .bottom-section__title {
-    margin-left: -475px;
-  }
-
-  .bottom-section__subtitle {
-    margin-left: -450px;
-  }
-
+  .bottom-section__title,
+  .bottom-section__subtitle,
   .bottom-section__description {
-    margin-left: -250px;
+    margin-left: -80px;
   }
 }
 
-@media (min-width: 510px) and (max-width: 600px) {
-  .bottom-section__title {
-    margin-left: -270px;
-  }
 
-  .bottom-section__subtitle {
-    margin-left: -250px;
-  }
 
-  .bottom-section__description {
-    margin-left: -100px;
-  }
-}
-
-@media (min-width: 411px) and (max-width: 510px) {
-  .bottom-section__title {
-    margin-left: -40%;
-  }
-
-  .bottom-section__subtitle {
-    margin-right: 50%;
-  }
-
-  .bottom-section__description {
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 900px) {
   .bottom-section__link {
     display: inline-block;
-    margin-left: 600px;
+    left: 500px;
   }
 
-  .bottom-section__arrow {
+  .bottom-section__arrow div{
     display: block;
     margin-top: 20px;
     margin-left: 0;
@@ -1572,7 +1568,7 @@ button {
     margin-left: 300px;
   }
 
-  .bottom-section__arrow {
+  .bottom-section__arrow div {
     display: block;
     margin-left: 0;
     margin-top: 20px;
