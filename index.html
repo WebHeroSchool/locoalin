@@ -75,12 +75,10 @@
       </section>
       <section class="middle-section">
         <div class="middle-section__image">
-          <div>
-            <img class="middle-section__image middle-section__image_bluebag" src="" alt="blue bag">
-          </div>
-          <div>
-            <img class="middle-section__image middle-section__image_pinkbag" src="" alt="pink bag">
-          </div>
+          <picture class="middle-section__img">
+            <source media="(min-width: 768px)" srcset="image/bags.png" alt="Кожаный клатч">
+              <img src="image/pink-bag-mob.png" alt="Кожаный клатч">
+          </picture>
         </div>
         <div class="middle-section__clutch">
           <h1 class="middle-section__title">
@@ -92,40 +90,47 @@
           <p class="middle-section__description">
             Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей. 
           </p>
-          <div class="middle-section__options">
-            <ul class="middle-section__color">
-              <li class="middle-section__elipse middle-section__elipse_grey"></li>
-              <li class="middle-section__elipse middle-section__elipse_pink"></li>
-              <li class="middle-section__elipse middle-section__elipse_blue"></li>
-              <li class="middle-section__elipse middle-section__elipse_green"></li>
-            </ul>
-            <div class="middle-section__price">
-              1990₽
+          <form class="middle-section__form" action="/" method="post">
+            <div class="middle-section__colors-and-price">
+              <div class="middle-section__form-colors">
+                <input class="form__colors-btn" alt="Серый" type="radio" name="colors" tabindex="1" id="gray">
+                  <label class="form__colors-item" for="gray"></label>
+                <input class="form__colors-btn" alt="Розовый" type="radio" name="colors" tabindex="2" id="pink" checked>
+                  <label class="form__colors-item" for="pink"></label>
+                <input class="form__colors-btn" alt="Голубой" type="radio" name="colors" tabindex="3" id="blue">
+                  <label class="form__colors-item" for="blue"></label>
+                <input class="form__colors-btn" alt="Зеленый" type="radio" name="colors" tabindex="4" id="green">
+                  <label class="form__colors-item" for="green"></label>
+              </div>
+              <p class="middle-section__price">1990₽</p>
             </div>
             <div class="middle-section__order">
-              <span class="middle-section__minus">-</span>
-              <input class="middle-section__input" type="text" value="1">
-              <span class="middle-section__plus">+</span>
+              <div class="middle-section__order-item  quantity  button">
+                <input type="hidden" name="quantity-choose" value="1" tabindex="5">
+                <button class="middle-section__minus">-</button>
+                <span class="middle-section__value">1</span>
+                <button class="middle-section__plus">+</button>
+              </div>
+              <button class="middle-section__btn">Добавить в корзину</button>
             </div>
-            <button class="middle-section__btn middle-section__btn_busket">
-              добавить в корзину
-            </button>
-          </div>
+          </form>
         </div>
-        <button class="middle-section__btn_other">
+        <a class="middle-section__link" href="#">
           другие товары на loco.com
-        </button>
-        <div>
-          <img class="middle-section__vector" src="" alt="Vector21">
-        </div>
-      </section>
-      <section class="bottom-section">
-        <div class="bottom-section__total-look">
-          <div class="bottom-section__blackline"></div>
-          <div>
-            <img class="bottom-section__image" src="" alt="autumn collection">
+          <div class="middle-section__arrow">
+            <div></div>
           </div>
-          <div class="bottom-section__block">
+        </a>
+      </section> 
+      <section class="bottom-section">
+        <div class="bottom-section__image">
+          <picture class="bottom-section__img">
+            <source media="(min-width: 768px)" srcset="image/total-look.png" alt="Фото Serene Total Look">
+            <img src="image/total-look-mob.png" alt="Фото Serene Total Look">
+          </picture>
+        </div>
+        <div class="bottom-section__block">
+          <div class="bottom-section__text-block">
             <h1 class="bottom-section__title">
               Serene Total Look
             </h1>
@@ -133,29 +138,35 @@
               Осенняя коллекция
             </h2>
             <p class="bottom-section__description">
-              Джинсы, свитер, обувь. В комплект также входит пакет ароматного чая и кружка.
+              Джинсы, свитер, обувь. 
+              <br>В комплект также входит пакет ароматного чая и кружка.
             </p>
-            <div class="bottom-section__order">
-              <span class="bottom-section__minus">-</span>
-              <input class="bottom-section__input" type="text" value="1">
-              <span class="bottom-section__plus">+</span>
-            </div>
-            <button class="bottom-section__btn_basket">
-                добавить в корзину
-              </button>
-            </div>
-            <button class="bottom-section__btn_other">
-              другие товары на loco.com
-            </button>
           </div>
-          <footer class="footer">
-            <h2 class="footer__subtitle">
-              Разработано в
-            </h2>
-            <a class="footer__link" href="#">
-              <img src="" alt="WHS">
-            </a>
-          </footer>
+          <form class="bottom-section__form" action="/" method="post">
+            <div class="bottom-section__order">
+              <div class="bottom-section__item  quantity  button">
+                <input type="hidden" name="quantity-choose" value="1" tabindex="6">
+                <button class="bottom-section__minus">-</button>
+                <span class="bottom-section__value">1</span>
+                <button class="bottom-section__plus">+</button>
+              </div>
+              <button class="bottom-section__btn">Добавить в корзину</button>
+            </div>
+          </form>
+        </div>
+        <a class="bottom-section__link" href="#">
+          другие товары на loco.com
+          <div class="bottom-section__arrow">
+            <div></div>
+          </div>
+        </a>
+        <footer class="footer">
+          <div class="footer__whs">
+            <address class="footer__developed">Разработано в 
+              <img class="footer__whs-logo" src="image/logo-whs.svg" alt="Web Hero School">
+            </address>
+          </div>
+        </footer>
       </section>
     </main>
   </body>
