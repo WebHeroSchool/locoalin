@@ -1500,7 +1500,7 @@ button {
     font-weight: bold;
     font-size: 40px;
     line-height: 41px;
-    color: #000000;
+    color: #000;
   }
 
   .bottom-section__subtitle {
@@ -1701,7 +1701,7 @@ button {
     font-size: 9px;
     line-height: 13px;
     color: #000;
-    opacity: 0.5;
+    opacity: .5;
   }
 
   .bottom-section__btn {
